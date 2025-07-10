@@ -19,7 +19,4 @@ public class Trigger {
     @Column(name = "trigger_name")
     private String name;
 
-    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "triggers")
-    @OrderBy("dateTime DESC")
-    private List<Headache> headacheEntries = new ArrayList<>();;
 }
